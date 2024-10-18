@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="blur-panel">
+            <header id="header">
+                <div class="header__left-side">
+                    <p>ToDoList</p>
+                </div>
+                <div class="header__middle-side">
+                    <input type="text" id="header__search" placeholder="Search">
+                    <button id="header__form__submit-btn" type="submit"></button>
+                </div>
+                <div class="header__right-side">
+                    <button class="filter-button active-filter" id="default-filter">All</button>
+                    <button class="filter-button">Favourite</button>
+                    <button class="filter-button">Completed</button>
+                </div>
+            </header>
+            <main id="main">
+            </main>
+            <aside id="aside">
+                <button id="start-creating-task">Create</button>
+            </aside>
+        </div>
+        <div id="create-task">
+            <h1 class="create-task__title">Create task</h1>
+            <div class="create-task__inner-wrapper">
+                <div class="create-task__inner">
+                    <label class='task-label' for="user-task-desc">Task description:</label>
+                    <input id='user-task-desc' type="text" name="user-task-desc" class="user-input">
+                    <label class='task-label' for="user-task-date">Due to (day):</label>
+                    <input id='user-task-date' type="date" name="user-task-date" class="user-input">
+                    <label class='task-label' for="user-task-time">Due to (time):</label>
+                    <input id='user-task-time' type="time" name="user-task-time" class="user-input">
+                    <div class="create-task__submit">
+                        <button id="create-task__button">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/taskActions.js"></script>
+    <script src="scripts/filterTasks.js"></script>
+</body>
+</html>
